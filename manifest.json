@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "description" : "A simple web server to host ui without code",
+    "name": "Web Server",
+    "version": "1.0",
+    "sockets": {
+        "tcpServer" : {
+            "listen": ["*"]
+          }
+    },
+    "permissions": ["system.network"],
+    "app": {
+        "background": {
+            "scripts": [
+              "background.js"
+            ],
+            "persistent": false
+        }
+    }
+  }
